@@ -1,0 +1,8 @@
+<div *ngIf="quantity >= 1" class="quant text-center">
+    <!-- <form> -->
+    <button (click)="increaseQuantity()" class="btn btn-primary">+</button>
+    <input disabled [(ngModel)]="quantity" class="text-center" type="text" name="">
+    <button (click)="decreaseQuantity()" class="btn btn-primary">-</button>
+    <!-- </form> -->
+</div>
+<button (click)="increaseQuantity()" *ngIf="quantity < 1" class="btn btn-primary form-control mt-2">Add to Card</button>

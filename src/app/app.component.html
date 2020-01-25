@@ -1,0 +1,51 @@
+<section class="menu-bar">
+  <div class="container">
+    <app-header></app-header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">OUR STORY</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#">PARTNER</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="row social">
+      <div class="col-12">
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="product-container">
+  <div class="container">
+    <div class="row row-eq-height">
+      <div class="col-md-3">
+        <app-menu></app-menu>
+      </div>
+
+      <div class="col-md-9">
+        <div class="products container">
+          <!-- Placeholder -->
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

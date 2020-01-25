@@ -1,0 +1,55 @@
+<h1>filter products</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-md-3">
+      <div class="form-group">
+        <label for="name">product name</label>
+        <input [(ngModel)]="productsService.searchTitle" type="text" class="form-control" id="name">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="form-group">
+        <label for="category">product category</label>
+        <select [(ngModel)]="productsService.searchCat" class="form-control" id="category">
+          <option selected>select category</option>
+          <option>sneakers</option>
+          <option>Shoes</option>
+          <option>bangkok</option>
+          <option>boots</option>
+          <option>tv</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="form-group">
+        <label for="size">product size</label>
+        <select [(ngModel)]="productsService.searchSize" class="form-control" id="size">
+          <option selected>select size</option>
+          <option>lg</option>
+          <option>m</option>
+          <option>xl</option>
+          <option>sm</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="form-group">
+        <label for="color">produt color</label>
+        <select [(ngModel)]="productsService.searchColor" class="form-control" id="color">
+          <option >white</option>
+          <option >vintage-red</option>
+          <option >pink</option>
+          <option >black</option>
+          <option >thailand</option>
+          <option >yellow</option>
+          <option >red</option>   
+          <option >blue</option>     
+        </select>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
